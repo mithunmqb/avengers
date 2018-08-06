@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    <script>
+        var xhr = new XMLHttpRequest();
+        var url = "https://api.myjson.com/bins/150g14";
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                var jsonData = JSON.parse(xhr.responseText);
+                loadContents(jsonData);
+            }
+        };
+
+        xhr.open("GET", url, true);
+        xhr.send();
+
+        function loadContents(data) {
+
+            if (data.headerLogo != undefined) {
+                loadHeader(data.headerLogo)
+            }
+            if (data.mainLogo != undefined) {
+                loadLogo(data.mainLogo)
+            }
+            if (data.nav != undefined) {
+                loadNavigationItems(data.nav)
+            }
+        }
+
+        function loadHeader(headerData) {
+
+            var html = "<a href= \"" + headerData.link + "\"> <img src=\"" + headerData.src + "\" alt=\"" + headerData.alt + "\">";
+            document.getElementById("header").innerHTML = html;
+        }
+        function loadLogo(logoData) {
+            var html = "<img src=\"" + logoData.src + "\" alt=\"" + logoData.alt + "\">";
+            document.getElementById("logo").innerHTML = html;
+        }
+        function loadNavigationItems(navData) {
+
+            var html = "";
+            var navItem = {};
+            for (var i = 0; i < navData.length; i++) {
+                navItem = navData[i];
+                html += "<div> <a href=\"" + navItem.link + "\">" + navItem.title + "</a> </div>";
+            }
+            document.getElementById("nav").innerHTML = html;
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+    <div class="logo" id="logo">
+    </div>
+    <nav id="nav">
+    </nav>
+    <div class="register-title">
+        <p class="join">JOIN THE AVENGERS</p>
+    </div>
+    <div class="register-content">
+        <form name="register">
+            <ul class="flex-outer">
+                <li>
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" placeholder="Your real name">
+                </li>
+                <li>
+                    <label for="alias">ALIAS</label>
+                    <input type="text" id="alias" placeholder="Your public name">
+                </li>
+                <li>
+                    <label for="dob">DATE OF BIRTH</label>
+                    <input type="date" id="dob" placeholder="Your date of birth">
+                </li>
+                <li>
+                    <p>GENDER</p>
+                    <ul class="flex-innner">
+                        <li>
+                            <input type="radio" id="male">
+                            <label for="male">MALE</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="female">
+                            <label for="female">FEMALE</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="cof">COUNTRY OF ORIGIN</label>
+                    <input type="text" name="cof" id="cof" placeholder="Country you were first active in">
+                </li>
+                <li>
+                    <p>SUPER POWERS</p>
+                    <ul class="flex-innner">
+                        <li>
+                            <input type="checkbox" name="flight" id="fly">
+                            <label for="flight">FLIGHT</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="xray" id="xray">
+                            <label for="flight">X-RAY VISION</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="back-story">BACK STORY</label>
+                    <textarea name="back-story" id="back-story" cols="30" rows="10" placeholder="Enter your back story here"></textarea>
+                </li>
+                <li>
+                    <button type="submit">REGISTER</button>
+                </li>
+            </ul>
+        </form>
+    </div>
+    <footer>
+        <p>2018 MARVEL STUDIOS INC. ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+
+</html>

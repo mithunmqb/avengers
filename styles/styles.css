@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+
+body {
+    height: auto;
+    background-color: 	#000000;
+    margin: 0%;
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(243, 26, 41);
+}
+
+.logo {
+    width: 100;
+    height: auto;
+    padding: 3% 0 1% 0;
+    margin: 2% 10% 2% 10%;
+}
+
+.logo img {
+    width: 40%;
+    height: 25%;
+    max-height: 25%;
+    margin: auto;
+    display: block;
+}
+
+nav {
+    
+    display: flex;
+    align-content: space-around;
+    width: 30%;
+    margin: auto;
+    font-size: .8em;
+    font-family: 'Roboto',sans-serif ;
+    color: gray;
+}
+
+
+
+nav div {
+    align-items: baseline;
+    height: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: silver;
+    text-decoration: none;
+}
+
+.content {
+    width: 70%;
+    margin: 2% auto;
+    height: auto;
+}
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    width: 100%;
+}
+
+.card {
+    flex: 0 1 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.card-image {
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-image img {
+    display: block;
+	border: 0;
+    width: 300px;
+    height: auto;
+}
+
+.card p {
+    font-family: 'Raleway', sans-serif;
+    font-size: .8em;
+    letter-spacing:  1px;
+    width: 100%;
+    color:darkgray;
+    overflow: hidden;
+    height: 200px;
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    font-family: 'Roboto',sans-serif ;
+    font-size: .7em;
+    color: gray;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        width: 30%;
+    }
+    .card {
+        flex: 0 1 45%;
+    }
+}
+
+@media only screen and (max-width: 587px) {
+    nav {
+        width: 100%;
+    }
+    .card {
+        flex: 0 1 45%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        width: 75%;
+    }
+    .card {
+        flex: 0 1 100%;
+    }
+}
+
+/* REGISTER */
+
+.join {
+    width: 100%;
+    margin: 2% 0 2% 0 ;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto',sans-serif ;
+    font-size: 2em;
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.register-content {
+
+    font-size: .8em;
+    font-family: 'Lato', sans-serif;
+    color: gray;
+    width: 75%;
+    margin: 3% auto;
+}
+
+.register-content ul {
+    list-style-type: none;
+}
+
+.register-content input {
+    background-color: darkgray;
+    border-style: solid;
+    border-width: .5px;
+    border-color: gray;
+}
+.flex-outer {
+
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:  center;
+}
+.flex-outer li {
+    margin: 1%;
+    flex: 0 1 75%;
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-outer li label, textarea, input, ul {
+
+    flex: 0 1 45%;
+}
+.flex-outer li label, p{
+    text-align: right;
+    margin: 0 5%  0 0;
+}
+
