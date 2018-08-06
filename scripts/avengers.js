@@ -22,6 +22,9 @@ function loadContents(data) {
     if (data.nav != undefined) {
         loadNavigationItems(data.nav)
     }
+    if (data.content != undefined) {
+        loadSuperHeroes(data.content)
+    }
 }
 
 function loadHeader(headerData) {
@@ -42,6 +45,21 @@ function loadNavigationItems(navData) {
         html += "<div> <a href=\"" + navItem.link + "\">" + navItem.title + "</a> </div>";
     }
     document.getElementById("nav").innerHTML = html;
+}
+
+function loadSuperHeroes(superHeroData) {
+    var html = "";
+    var cardClass = "card";
+    var cardImageClass = "card-image";
+     superHeroData.forEach(function (card) {
+        html += "<article class=\"" + cardClass + "\">" +
+                "<div class = \"card-image\">" + 
+                    "<img src=\"" + card.image + "\" alt=\"icon\">" +
+                "</div>" +
+                "<p>" + card.text + "</p>" +
+                "</article>";
+    });
+    document.getElementById("cards").innerHTML = html;
 }
 
 function validateForm() {
