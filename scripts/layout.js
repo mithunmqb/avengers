@@ -1,6 +1,6 @@
-import {loadHeader, loadFooter} from "./headerfooter"
-import {loadLogo} from "./logo"
-import {loadNavigationItems} from "./navigation"
+import {loadHeader, loadFooter} from "./headerfooter.js"
+import {loadLogo} from "./logo.js"
+import {loadNavigationItems} from "./navigation.js"
 
 function loadCommonLayoutElements(commonContentsURL) {
 

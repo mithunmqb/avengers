@@ -1,5 +1,5 @@
-import {loadCommonLayoutElements} from "./layout"
-import {loadSuperHeros} from "./super-heros"
+import {loadCommonLayoutElements} from "./layout.js"
+import {loadSuperHeros} from "./super-heros.js"
 
 const commonContentsURL = "./scripts/common-contents.json";
 const superHerosURL = "./scripts/super-heros.json";
