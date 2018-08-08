@@ -1,0 +1,24 @@
+{
+    "header": {
+        "src": "images/marvel.png",
+        "alt": "Marvel logo",
+        "link": "https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"
+    },
+    "mainLogo": {
+        "src": "images/avengers-logo.png",
+        "alt": "Avengers logo"
+    },
+    "nav": [
+        {
+            "title": "H O M E",
+            "link": "index.html"
+        },
+        {
+            "title": "R E G I S T E R",
+            "link": "register.html"
+        }
+    ],
+    "footer" : {
+        "text" :  "2018 MARVEL STUDIOS INC. ALL RIGHTS RESERVED"
+    }
+}

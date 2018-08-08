@@ -1,3 +1,8 @@
+import {loadHeader, loadFooter} from "headerFooter"
+import {loadLogo} from "logo"
+import {loadNavigationItems} from "navigation"
+
+
 var xhr = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 var url = "./scripts/contents.json";
