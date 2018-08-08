@@ -1,5 +1,6 @@
 var xhr = new XMLHttpRequest();
-var url = "https://api.myjson.com/bins/150g14";
+xhr.overrideMimeType("application/json");
+var url = "./scripts/contents.json";
 
 xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {

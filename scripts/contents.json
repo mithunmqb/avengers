@@ -20,27 +20,27 @@
     ],
     "content": [
         {
-            "image": "images/captain.png",
+            "image": "./images/captain.png",
             "text": "Steve Rogers grew up in Brooklyn during the Great Depression, a scrawny kid protected from neighborhood bullies by his best friend \"Bucky\" Barnes. Horrified by newsreel footage of the Nazis in Europe, Rogers was inspired to enlist in the Army around the time the United States entered World War II. However, because of failing the physical test, he was rejected. Refusing to work at the factories, he reattempted enlistment several times. His luck changed during another visit to Recruitment Center when Military Sergeant Dugan recruited him for Project: Rebirth after hearing Rogers pleas. After voluntarily subjecting to surgery, steroid treatments, and other experimental treatments supervised by Doctor Erskine, Rogers became the first genetically-enhanced super-soldier."
         },
         {
-            "image": "images/iron_man.png",
+            "image": "./images/iron_man.png",
             "text": "Anthony Edward Stark is the adopted son of wealthy industrialist and head of Stark Industries, Howard Stark, and Maria Stark. A boy genius, he enters MIT at the age of 15 to study electrical engineering and later receives master's degrees in electrical engineering and physics. After his parents are killed in a car accident, he inherits his father's company."
         },
         {
-            "image": "images/thor.png",
+            "image": "./images/thor.png",
             "text": "Thor faces a prolonged struggle against Thanos when he seeks to remake the universe.[158] When Odin dies in battle against Surtur, Thor becomes ruler of Asgard. The thunder god extends his rule to Earth, with major repercussions. Thor and the Asgardians slay or imprison those who oppose them, including a young religious mutant called Davis; Zarrko the Tomorrow Man; Perrikus of the Dark Gods; the U.S. Government, and even his fellow Avengers. Thor marries Amora (the Enchantress), and has a son, Magni, who upon reaching adulthood doubts his father's judgment. Wracked with guilt, Thor is drawn into battle with his former ally Tarene and the Destroyer (occupied by former foe Desak), and reverses these events via time travel."
         },
         {
-            "image": "images/hulk.png",
+            "image": "./images/hulk.png",
             "text": "Following his accidental exposure to gamma rays during the detonation of an experimental bomb, Banner is physically transformed into the Hulk when subjected to emotional stress, at or against his will, often leading to destructive rampages and conflicts that complicate Banner's civilian life. The Hulk's level of strength is normally conveyed as proportionate to his level of anger. Commonly portrayed as a raging savage, the Hulk has been represented with other personalities based on Banner's fractured psyche, from a mindless, destructive force, to a brilliant warrior, or genius scientist in his own right. "
         },
         {
-            "image": "images/drstrange.png",
+            "image": "./images/drstrange.png",
             "text": "He was once a brilliant but egotistical surgeon. After a car accident severely damages his hands and hinders his ability to perform surgery, he searches the globe for a way to repair them and encounters the Ancient One. After becoming one of the old Sorcerer Supreme's students, he becomes a practitioner of both the mystical arts as well as martial arts. Along with knowing many powerful spells, he has a costume with two mystical objects—the Cloak of Levitation and Eye of Agamotto—which give him added powers. Strange is aided along the way by his friend and valet, Wong, and a large assortment of mystical objects. He takes up residence in a mansion called the Sanctum Sanctorum, located in New York City. Later, Strange takes the title of Sorcerer Supreme."
         },
         {
-            "image": "images/spidey.png",
+            "image": "./images/spidey.png",
             "text": "In Forest Hills, Queens, New York,[44] Midtown High School student Peter Benjamin Parker is a science-whiz orphan living with his Uncle Ben and Aunt May. As depicted in Amazing Fantasy #15 (August 1962), he is bitten by a radioactive spider (erroneously classified as an insect in the panel) at a science exhibit and \"acquires the agility and proportionate strength of an arachnid\".[45] Along with super strength, Parker gains the ability to adhere to walls and ceilings. Through his native knack for science, he develops a gadget that lets him fire adhesive webbing of his own design through small, wrist-mounted barrels. Initially seeking to capitalize on his new abilities, Parker dons a costume and, as \"Spider-Man\", becomes a novelty television star. However, \"He blithely ignores the chance to stop a fleeing thief, [and] his indifference ironically catches up with him when the same criminal later robs and kills his Uncle Ben.\" Spider-Man tracks and subdues the killer and learns, in the story's next-to-last caption, \"With great power there must also come—great responsibility!\""
         }
     ]
