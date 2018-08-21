@@ -13,18 +13,18 @@ function loadSuperHeros(superHerosURL) {
 }
 
 function loadSuperHeroCards(superHeroData) {
-    var html = "";
-    var cardClass = "card";
-    var cardImageClass = "card-image";
+    var html = ``;
+    var cardClass = `card`;
+    var cardImageClass =  `card-image`;
      superHeroData.forEach(function (card) {
-        html += "<article class=\"" + cardClass + "\">" +
-                "<div class = \"card-image\">" + 
-                    "<img src=\"" + card.image + "\" alt=\"icon\">" +
-                "</div>" +
-                "<p>" + card.text + "</p>" +
-                "</article>";
+        html += `<article class="${cardClass}"> 
+        <div class = "${cardImageClass}"> 
+        <img src="${card.image}" alt="icon">
+                </div>
+                <p>${card.text}</p>
+                </article>`
     });
-    document.getElementById("cards").innerHTML = html;
+    document.getElementById(`cards`).innerHTML = html;
 }
 
 export {loadSuperHeros};
